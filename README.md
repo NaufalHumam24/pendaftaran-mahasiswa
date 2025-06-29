@@ -1,5 +1,3 @@
----
-
 # pendaftaran-mahasiswa
 
 Link Website : https://pendaftaran-mahasiswa-baru.netlify.app/
@@ -84,8 +82,6 @@ pendaftaran-netlify/
    * **Publish Directory**: `.`
 4. Netlify akan otomatis membaca `netlify/functions/` sebagai serverless functions.
 5. Selesai! Aplikasi siap digunakan dan PDF bisa di-generate live!
-
----
 
 ## 📌 Catatan
 
