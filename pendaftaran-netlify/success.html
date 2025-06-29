@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pendaftaran Berhasil</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(-45deg, #a8edea, #5dd39e, #29b6ab, #00796b);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .form-container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 2rem 1.5rem;
+      margin: 0 1rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 500px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: center;
+      color: white;
+    }
+
+    .form-container h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .form-container p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .form-button {
+      padding: 0.85rem 1.5rem;
+      background: white;
+      color: rgba(0, 0, 0, 0.5);
+      border: none;
+      border-radius: 16px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      opacity: 0.85;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .form-button:hover {
+      background: #e4e4e4;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Pendaftaran Berhasil!</h2>
+    <p>Terima kasih telah mendaftar. Silakan unduh bukti pendaftaran atau kembali ke halaman utama.</p>
+    <div class="button-group">
+      <a href="index.html" class="form-button">Kembali</a>
+      <button id="downloadPDF" class="form-button">Unduh PDF</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
