@@ -1,1 +1,9 @@
-
+{
+  "name": "pendaftaran-mahasiswa-netlify",
+  "version": "1.0.0",
+  "description": "Form Pendaftaran Mahasiswa Baru dengan PDF via Netlify Functions",
+  "license": "MIT",
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  }
+}
