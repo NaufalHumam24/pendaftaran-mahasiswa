@@ -13,7 +13,7 @@ if (pasFotoInput) {
   });
 }
 
-// Form submit: kirim data ke Netlify Function + download PDF + redirect ke success.html
+// Form submit: kirim data ke Netlify Function + simpan PDF URL ke sessionStorage + redirect ke success.html
 const pendaftaranForm = document.getElementById('pendaftaranForm');
 if (pendaftaranForm) {
   pendaftaranForm.addEventListener('submit', async function (e) {
@@ -48,15 +48,7 @@ if (pendaftaranForm) {
     // Simpan URL PDF ke sessionStorage buat success.html
     sessionStorage.setItem('pdfURL', url);
 
-    // Download otomatis ke user
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Bukti_Pendaftaran.pdf';
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-
-    // Redirect ke success.html
+    // Redirect ke success.html (tanpa download dulu)
     window.location.href = 'success.html';
   });
 }
